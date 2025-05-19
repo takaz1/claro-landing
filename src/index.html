@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claro Colombia - Internet y Móvil</title>
+    <!-- Tailwind CSS (CDN) -->
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- CSS personalizado (opcional) -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <header class="bg-red-600 text-white sticky top-0 z-50">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/claro-logo.png" alt="Logo Claro" class="h-14">
+                <nav class="hidden md:flex ml-10">
+                    <a href="#triple-play" class="px-3 py-2 hover:bg-red-800">Planes</a>
+                    <a href="#preguntas" class="px-3 py-2 hover:bg-red-800">Preguntas</a>
+                </nav>
+            </div>
+            <div class="bg-black p-2 rounded-lg">
+                <p class="text-sm"> <span class="font-bold">¡Escribenos!</span></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Imagen de fondo (asegúrate de tenerla en tu carpeta /images) -->
+    <section class="relative h-96 bg-red-800 text-white">
+        <!-- Imagen de fondo (asegúrate de tenerla en tu carpeta /images) -->
+        <img 
+            src="images/claro.webp" 
+            alt="Banner Claro" 
+            class="w-full h-full object-cover absolute inset-0 opacity-50"
+        >
+        <!-- Contenido superpuesto -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center p-4">
+            
+            <h1 class="text-4xl font-bold mb-4">Internet de alta velocidad</h1>
+            <p class="text-xl mb-8">Desde $49.900/mes</p>
+            <a href="#triple-play">
+            <button 
+                
+                class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-bold ">
+                ¡Contrata ahora!
+            </button>
+        </a>
+        </div>
+    </section>
+    <!-- Contenido superpuesto -->
+
+    <!-- Banner principal 
+    <section class="bg-red-800 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Internet de alta velocidad</h1>
+            <p class="text-xl mb-8">Desde $49.900/mes</p>
+            <button 
+                onclick="openModal()"
+                class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-bold">
+                ¡Contrata ahora!
+            </button>
+        </div>
+    </section>
+    -->
+    <!-- Planes -->
+    <section class="container mx-auto my-12">
+        <h2 class="text-3xl font-bold text-center mb-8 text-red-500"> Elige el Plan Claro que más te guste </h2>
+        <h2 id ='triple-play' class="text-2xl  text-center mb-12">Y disfruta lo que tenemos para ti</h2>
+        <br>
+        <div class="flex items-center justify-center bg-slate-950 rounded-lg p-4 mx-auto my-4 w-fit">
+        <img src="images/tripeplay.png" alt="tripeplay" class="h-10 mr-3">
+        <h2 class="text-1xl text-white mb-1 font-bold"> Tripeplay</h2>
+        </div>
+        <br>
+        
+
+<div class="grid md:grid-cols-3 gap-6 mx-auto px-4"> 
+           
+           <!-- Opción 1 -->
+            <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+        <div class="bg-red-600 p-4">
+            <h3 class="text-xl font-bold text-white">Opción 1</h3>
+        </div>
+        <div class="p-6">
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">Internet:</strong> 900 Megas</p>
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">TV:</strong> 1 Deco HD (130 canales)</p>
+            <p class="text-green-600  font-bold mb-3 bg-gray-100 p-2 rounded">Incluye GRATIS: Amazon Prime</p>
+            <div class="bg-red-50 p-3  rounded-lg mb-3">
+                <p class="text-red-600 font-bold">Promoción:</p>
+                <p class="text-black">Mayo GRATIS, Junio y Julio $49.900</p>
+            </div>
+            <p class="text-gray-500 mb-4 text-sm">Precio normal desde Agosto: $99.900</p>
+            <a href="https://wa.me/573133594045?text=Hola!%2C%20me%20interesa%20el%20plan%20Tripeplay%20Opción%201"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button class="w-full bg-black hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                Seleccionar
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Opción 2 -->
+    <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+        <div class="bg-red-600 p-4">
+            <h3 class="text-xl font-bold text-white">Opción 2</h3>
+        </div>
+        <div class="p-6">
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">Internet:</strong> 900 Megas</p>
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">TV:</strong> 2 Decos (1 HD - 130 canales, 1 Digital - Smart TV)</p>
+            <p class="text-green-600 font-bold mb-3 bg-gray-100 p-2 rounded">Elige 1 GRATIS: Amazon Prime, Win+, HBO, Netflix</p>
+            <div class="bg-red-50 p-3  rounded-lg mb-3">
+                <p class="text-red-600 font-bold">Promoción:</p>
+                <p class="text-black">Mayo GRATIS, Junio y Julio $54.900</p>
+            </div>
+            <p class="text-gray-500 mb-4 text-sm">Precio normal desde Agosto: $109.900</p>
+            <a href="https://wa.me/573133594045?text=Hola!%2C%20me%20interesa%20el%20plan%20Tripeplay%20Opción%202"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button class="w-full bg-black hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                Seleccionar
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Opción 3 -->
+    <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+        <div class="bg-red-600 p-4">
+            <h3 class="text-xl font-bold text-white">Opción 3</h3>
+        </div>
+        <div class="p-6">
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">Internet:</strong> 900 Megas</p>
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">TV:</strong> 2 Decos HD (130 canales)</p>
+            <p class="text-green-600 font-bold mb-3 bg-gray-100 p-2 rounded">Elige 1 GRATIS: HBO + Netflix, o HBO + Win Sports+</p>
+            <div class="bg-red-50 p-3 rounded-lg mb-3">
+                <p class="text-red-600 font-bold">Promoción:</p>
+                <p class="text-black">Mayo GRATIS, Junio y Julio $57.900</p>
+            </div>
+            <p class="text-gray-500 mb-4 text-sm">Precio normal desde Agosto: $115.900</p>
+            <a href="https://wa.me/573133594045?text=Hola!%2C%20me%20interesa%20el%20plan%20Tripeplay%20Opción%203"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button class="w-full bg-black hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                Seleccionar
+            </button>
+            </a>
+        </div>
+    </div>
+</div>
+    <br>
+    <p class="text-center">NO APLICA PARA PUEBLOS, VEREDAS, SOLO CIUDAD</p>
+                
+        
+        <br>
+        <!-- Plan SOLO INTERNET-->
+        <div class="flex items-center justify-center bg-red-600 rounded-lg p-5 mx-auto my-4 w-fit">
+        <img src="images/internet.png" alt="tripeplay" class="h-10 mr-3">
+        <h2 class="text-1xl text-white mb-1 font-bold"> Solo Internet</h2>
+        </div>
+        <br>
+        <div class="grid md:grid-cols-3 gap-6 mx-auto px-4">
+        <!-- Plan 1 -->
+
+            <!-- Opción 1 -->
+            <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+        <div class="bg-black p-4">
+            <h3 class="text-xl font-bold text-white">Opción 1</h3>
+        </div>
+        <div class="p-6">
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">Internet:</strong> 900 Megas</p>
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">TV:</strong> 1 Deco HD (130 canales)</p>
+            <p class="text-green-600  font-bold mb-3 bg-gray-100 p-2 rounded">Incluye GRATIS: Amazon Prime</p>
+            <div class="bg-red-50 p-3  rounded-lg mb-3">
+                <p class="text-red-600 font-bold">Promoción:</p>
+                <p class="text-black">Mayo GRATIS, Junio y Julio $49.900</p>
+            </div>
+            <p class="text-gray-500 mb-4 text-sm">Precio normal desde Agosto: $99.900</p>
+            <a href="https://wa.me/573133594045?text=Hola!%2C%20me%20interesa%20el%20plan%20Solo%20Internet%20Opción%201"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button class="w-full bg-red-600 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                Seleccionar
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Opción 2 -->
+    <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+        <div class="bg-black p-4">
+            <h3 class="text-xl font-bold text-white">Opción 2</h3>
+        </div>
+        <div class="p-6">
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">Internet:</strong> 900 Megas</p>
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">TV:</strong> 2 Decos (1 HD - 130 canales, 1 Digital - Smart TV)</p>
+            <p class="text-green-600 font-bold mb-3 bg-gray-100 p-2 rounded">Elige 1 GRATIS: Amazon Prime, Win+, HBO, Netflix</p>
+            <div class="bg-red-50 p-3  rounded-lg mb-3">
+                <p class="text-red-600 font-bold">Promoción:</p>
+                <p class="text-black">Mayo GRATIS, Junio y Julio $54.900</p>
+            </div>
+            <p class="text-gray-500 mb-4 text-sm">Precio normal desde Agosto: $109.900</p>
+            <a href="https://wa.me/573133594045?text=Hola!%2C%20me%20interesa%20el%20plan%20Solo%20Internet%20Opción%202"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button class="w-full bg-red-600 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                Seleccionar
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Opción 3 -->
+    <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+        <div class="bg-black p-4">
+            <h3 class="text-xl font-bold text-white">Opción 3</h3>
+        </div>
+        <div class="p-6">
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">Internet:</strong> 900 Megas</p>
+            <p class="text-gray-800 text-xl mb-3"><strong class="font-bold">TV:</strong> 2 Decos HD (130 canales)</p>
+            <p class="text-green-600 font-bold mb-3 bg-gray-100 p-2 rounded">Elige 1 GRATIS: HBO + Netflix, o HBO + Win Sports+</p>
+            <div class="bg-red-50 p-3 rounded-lg mb-3">
+                <p class="text-red-600 font-bold">Promoción:</p>
+                <p class="text-black">Mayo GRATIS, Junio y Julio $57.900</p>
+            </div>
+            <p class="text-gray-500 mb-4 text-sm">Precio normal desde Agosto: $115.900</p>
+             <a href="https://wa.me/573133594045?text=Hola!%2C%20me%20interesa%20el%20plan%20Solo%20Internet%20Opción%203"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button class="w-full bg-red-600 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                Seleccionar
+            </button>
+             </a>
+        </div>
+    </div>
+</div>
+<br>
+<p class="text-center">NO APLICA PARA PUEBLOS, VEREDAS, SOLO CIUDAD</p>
+
+<span id="preguntas"></span>
+
+<br>
+        
+    </section>
+
+    <!-- Popup (hidden por defecto) -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg max-w-md">
+            <h3 class="text-xl font-bold mb-4">Déjanos tus datos</h3>
+            <form>
+                <input type="text" placeholder="Nombre" class="w-full p-2 border mb-2 rounded">
+                <input type="tel" placeholder="Teléfono" class="w-full p-2 border mb-2 rounded">
+                <button 
+                    type="button"
+                    onclick="closeModal()"
+                    class="bg-blue-900 text-white px-4 py-2 rounded">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+        <section class="container m-auto my-16 px-4">
+            <h2 class="text-3xl text-center">
+                Preguntas Frecuentes <b class="text-primary-color">Claro</b>
+            </h2>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Qué planes tiene Claro Hogar con Internet, televisión y telefonía?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Claro ofrece planes Triple Play que incluyen Internet, televisión por app (Claro TV+) y telefonía fija. Puedes elegir velocidades desde 170 Mbps hasta 500 Mbps, con beneficios como canales HD, llamadas ilimitadas y paquetes premium incluidos como Netflix, HBO, Win Sports, Prime Video y Hot Pack.
+                    </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Cuánto cuesta el Internet de Claro en mi ciudad?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Los precios varían según la ciudad y la cobertura. - Si contratas solo Internet de 250 Mbps, el precio base es de $75.900/mes. - El plan doble (Internet + telefonía fija) de 250 Mbps cuesta $84.900/mes. - El valor del plan de entrada completo (con TV, Internet y telefonía) es de $99.900, pero puedes recibir promociones como 2 meses al 50% de descuento, quedando en $49.900 los primeros meses.
+                        <br>
+                        </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Qué velocidad de Internet ofrece Claro Hogar?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Claro ofrece velocidades desde 170 Mbps hasta 500 Mbps, ideales para hogares con varios dispositivos, videollamadas, clases virtuales, gaming y streaming sin interrupciones.
+                    </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Qué diferencia hay entre Claro satelital y fibra óptica?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Actualmente, los planes más comercializados son los de fibra óptica, que ofrecen mejor velocidad y estabilidad. Los planes satelitales ya no se ofrecen directamente para Internet hogar, ya que están enfocados en zonas rurales muy específicas.
+                        <br>
+                        </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Qué documentos necesito para contratar Claro Hogar?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Para adquirir un plan Claro Hogar necesitas:
+                        <br>
+                        - Cédula de ciudadanía
+                        <br>
+                        - Dirección exacta de instalación
+                        <br>
+                        - Teléfono de contacto
+                        <br>
+                         </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Cuál es el número de atención al cliente de Claro?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Puedes comunicarte gratis desde tu celular Claro al *611, o desde cualquier operador al: <br> - 01 800 320 0200 <br>- (601) 750 0500 (en Bogotá)
+                        <br>
+                         </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Claro ofrece planes sin cláusula de permanencia?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        Todos los planes de Claro Hogar tienen cláusula de permanencia de 12 meses.
+                        <br>
+                        - Si cumples el año, no pagas penalidades.
+                        <br>
+                        - Si decides contratar sin cláusula, deberás pagar $800.000 con la primera factura.
+                        <br>
+                         </p>
+                </div>
+            </details>
+            
+            <details class="group border-b-2 border-primary-color open:border-b-2">
+                <summary class="flex justify-between items-center cursor-pointer py-3 text-base font-semibold text-gray-800">
+                    <h3>¿Puedo usar mi propio módem con Claro?</h3>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="text-sm text-gray-700 pb-4 pr-6">
+                    <p>
+                        No. Claro solo permite el uso de equipos oficiales entregados por la compañía, los cuales están configurados para garantizar compatibilidad, estabilidad del servicio y soporte técnico.
+                    </p>
+                </div>
+            </details>
+        </section>
+        
+        <!-- Más Información Section -->
+        <section class="container m-auto my-8">
+            <h2 class="text-center text-red text-4xl font-claro-bold font-bold my-4">
+                Recibe más información sobre nuestras ofertas:
+            </h2>
+            
+           
+                
+                <!-- Hogar Card -->
+                <div class="max-w-xl flex flex-col rounded-xl justify-center border border-gray-400 mx-auto text-center">
+                    <img src="images/hogar.BVAb2R12_Ztno5E.webp" class="rounded-t-lg w-auto h-auto" alt="pospago claro" loading="lazy" width="571" height="218" decoding="async">
+                    <div class="flex flex-col justify-between flex-auto p-4 text-xl">
+                        <article>
+                            <p>
+                                Aprovecha las megas de tu internet con <strong class="font-claro-bold">Claro hogar</strong> y <br> disfruta del mejor entretenimiento con más velocidad
+                            </p>
+                            <h3 class="md:hidden text-2xl font-claro-bold font-bold my-4">
+                                Pregunta por la oferta del mes
+                            </h3>
+                            <h3 class="hidden md:block text-2xl font-claro-bold font-bold my-4">
+                                Pregunta por la oferta del mes <br>para estratos 3 al 6
+                            </h3>
+                        </article>
+                        <div>
+                        <a href="https://wa.me/573133594045?text=Hola!%2C%20deseo%20mas%20informacion%20de%20la%20oferta%20del%20mes"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <button data-tsource="Mas info ofertas estratos 3 al 6" data-open-modal="" class="leading-none text-2xl px-4 py-3 rounded-lg border border-primary-color font-claro-bold font-bold text-primary-color">
+                                ¡Escribenos!
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
